@@ -1,0 +1,9 @@
+{
+  "name": "fastify-graphql-undici",
+  "version": "1.0.0",
+  "description": "Boilerplate for graphql with fastify mercurius",
+  "main": "index.ts",
+  "repository": "https://github.com/dheeraj1997/fastify-graphql-undici.git",
+  "author": "dheeraj1997 <dheerajvarshney00@gmail.com>",
+  "license": "MIT"
+}
