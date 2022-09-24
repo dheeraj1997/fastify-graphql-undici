@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "declaration": false,
+        "esModuleInterop": true,
+        "target": "es5",                          
+      "module": "commonjs",                    
+      "sourceMap": true,
+      "strictNullChecks": true,
+      "rootDir": "./",
+      "strict": true,         
+    }
+}
