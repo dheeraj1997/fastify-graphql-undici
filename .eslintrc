@@ -1,18 +1,43 @@
 {
-    "root": true,
-    "parser": "@typescript-eslint/parser",
-    "plugins": [
-      "@typescript-eslint",
-      "prettier"
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint",
+    "prettier"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "rules": {
+    // Means error
+    "no-console": 2,
+    "prettier/prettier": 2,
+    // enable additional rules
+    "indent": [
+      "error",
+      2
     ],
-    "extends": [
-      "eslint:recommended",
-      "plugin:@typescript-eslint/eslint-recommended",
-      "plugin:@typescript-eslint/recommended",
-      "prettier"
+    "linebreak-style": [
+      "error",
+      "unix"
     ],
-    "rules": {
-      "no-console": 1,       // Means warning
-      "prettier/prettier": 2 // Means error
-    }
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "semi": [
+      "error",
+      "never"
+    ],
+    // override configuration set by extending "eslint:recommended"
+    "no-empty": "warn",
+    "no-cond-assign": [
+      "error",
+      "always"
+    ],
+    "@typescript-eslint/no-unused-vars": 2
   }
+}
