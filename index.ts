@@ -17,7 +17,7 @@ const opts: RouteShorthandOptions = {
   }
 }
 
-server.get('/healthcheck', opts, async (request, reply) => {
+server.get('/healthcheck', opts, async () => {
   return { success: 200 }
 })
 
@@ -28,7 +28,6 @@ const start = async () => {
     const address = server.server.address()
     const port = typeof address === 'string' ? address : address?.port
     console.log(`Server started at http://localhost:${port}`)
-
   } catch (err) {
     server.log.error(err)
     process.exit(1)
