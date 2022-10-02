@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Close Stale Issues
-        uses: actions/stale@4.0.0
+        uses: actions/stale@v4.0.0
         with:
           repo-token: ${{env.GITHUB_TOKEN}}
           days-before-stale: 30
