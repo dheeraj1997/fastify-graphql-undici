@@ -3,4 +3,4 @@
 
 npm run prettier:diff
 npm run lint:diff:fix
-git add
+git add .
