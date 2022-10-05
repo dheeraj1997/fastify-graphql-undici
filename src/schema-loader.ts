@@ -1,8 +1,8 @@
-import path from 'path'
+import { mergeResolvers, mergeTypeDefs } from '@graphql-tools/merge'
 import { loadFilesSync } from '@graphql-tools/load-files'
-import { mergeTypeDefs, mergeResolvers } from '@graphql-tools/merge'
 import { makeExecutableSchema } from '@graphql-tools/schema'
 import { MercuriusLoaders } from 'mercurius'
+import path from 'path'
 
 const typesArray = loadFilesSync(path.join(__dirname, './schemas'))
 export const typeDefs = mergeTypeDefs(typesArray)

@@ -1,7 +1,7 @@
 import Fastify, { FastifyInstance, RouteShorthandOptions } from 'fastify'
-import mercurius from 'mercurius'
 import { loaders, schema } from './src/schema-loader'
-import { winston } from 'winston'
+import mercurius from 'mercurius'
+import winston from 'winston'
 
 const app: FastifyInstance = Fastify({})
 
