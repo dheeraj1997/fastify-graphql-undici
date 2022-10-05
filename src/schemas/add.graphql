@@ -1,0 +1,7 @@
+type Add {
+  sum: Int
+  pow: Int
+}
+type Query {
+  add(x: Int, y: Int): Add
+}
