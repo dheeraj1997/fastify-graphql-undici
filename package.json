@@ -18,7 +18,12 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "fastify": "^4.6.0"
+    "@graphql-tools/load-files": "^6.6.1",
+    "@graphql-tools/schema": "^9.0.4",
+    "fastify": "^4.6.0",
+    "graphql": "^16.6.0",
+    "mercurius": "^11.0.1",
+    "winston": "^3.8.2"
   },
   "devDependencies": {
     "@types/node": "^18.7.23",
